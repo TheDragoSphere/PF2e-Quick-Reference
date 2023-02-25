@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name=viewport content="width=device-width, initial-scale=1">
-    <title>D&D 5e quick reference</title>
+    <title>PF2E quick reference</title>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/quickref.css">
     <link rel="stylesheet" type="text/css" href="css/icons.css">
@@ -18,9 +18,9 @@
 
         <!-- Movement section -->
         <div id="section-movement" class="section-container">
-            <div class="section-title">
-                Movement <span class="float-right">limited by movement speed</span>
-            </div>
+            <button type="button" class="collapsible">Movement
+                <span class="float-right">limited by movement speed</span>
+            </button>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
                     You can move at any time during your turn (before, after, or during actions).
@@ -32,9 +32,9 @@
 
         <!-- Action section -->
         <div id="section-action" class="section-container">
-            <div class="section-title">
-                Action <span class="float-right">1/turn</span>
-            </div>
+            <button type="button" class="collapsible">Actions
+                <span class="float-right">max. 1/turn</span>
+            </button>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
                     You can also interact with one object or feature of the
@@ -46,9 +46,9 @@
 
         <!-- Bonus action section -->
         <div id="section-bonus-action" class="section-container">
-            <div class="section-title">
-                Bonus action <span class="float-right">max. 1/turn</span>
-            </div>
+            <button type="button" class="collapsible">Bonus Actions
+                <span class="float-right">max. 1/turn</span>
+            </button>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
                     You can take a bonus action only when a special ability, spell, or feature
@@ -60,9 +60,7 @@
 
         <!-- Reaction section -->
         <div id="section-reaction" class="section-container">
-            <div class="section-title">
-                Reaction <span class="float-right">max. 1/round</span>
-            </div>
+            <button type="button" class="collapsible">Reaction</button>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
                     A reaction is an instant response to a trigger of some kind, which
@@ -74,9 +72,7 @@
 
         <!-- Condition section -->
         <div id="section-condition" class="section-container">
-            <div class="section-title">
-                Condition
-            </div>
+            <button type="button" class="collapsible">Conditions</button>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
                     Conditions alter your capabilities in a variety of ways, and can arise as a result of a spell, a class feature, a monster's attack, or other effect.
@@ -87,9 +83,7 @@
         
         <!-- Environmental section -->
         <div id="section-environment" class="section-container">
-            <div class="section-title">
-                Environmental Effects
-            </div>
+            <button type="button" class="collapsible">Environmental  Effects</button>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
                     Effects that obscure vision can prove a significant hindrance to most adventuring tasks.
@@ -110,7 +104,38 @@
             </div>
         </div>
 
+      <!-- Other section -->
+      
+         <div id="section-other" class="section-container">
+            <button type="button" class="collapsible">Other Actions</button>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize">
+                    "Conditions alter your cool capabilities in a variety of ways, and can arise as a result of a spell, a class feature, a monster's attack, or other effect."
+                    </div>
+                <div class="section-row" id="basic-other"></div>
+            </div>
+          </div>
+       
+
+
+
+
+
+        <!-- Cloak and Dagger section -->
+        <div id="section-cloakanddagger" class="section-container">
+            <button type="button" class="collapsible">Cloak and Dagger Actions</button>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize">
+                    Conditions alter your capabilities in a variety of ways, and can arise as a result of a spell, a class feature, a monster's attack, or other effect.
+                </div>
+                <div class="section-row" id="basic-cloakanddagger"></div>
+            </div>
+        </div>
+
+
     </div>
+    
+  
 
     <!-- Modal -->
     <div class="modal" id="modal" tabindex="-1">
@@ -142,6 +167,27 @@
     <script type="text/javascript" src="js/data_reaction.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_condition.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_environment.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_other.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_cloakanddagger.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/quickref.js" charset="utf-8"></script>
+    
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+
+
 </body>
 </html>

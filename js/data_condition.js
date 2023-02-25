@@ -1,6 +1,6 @@
 data_condition = [
     {
-        title: "Blinded",
+        title: "something",
         icon: "one-eyed",
         subtitle: "You can't see",
         description: "You can't see",
@@ -41,7 +41,8 @@ data_condition = [
         bullets: [
             "<table><tr><th>Level</th><th></th><th></th><th style='text-align:left'>Effect</th></tr><tr><td>1</td><td></td><td></td><td>Disadvantage on ability checks</td></tr><tr><td>2</td><td></td><td></td><td>Speed halved</td></tr><tr><td>3</td><td></td><td></td><td>Disadvantage on attack rolls and saving throws</td></tr><tr><td>4</td><td></td><td></td><td>Hit point maximum halved</td></tr><tr><td>5</td><td></td><td></td><td>Speed reduced to 0</td></tr><tr><td>6</td><td></td><td></td><td>Death</td></tr></table>",
             "You suffer the effect of your current level of exhaustion as well as all lower levels.",
-            "Finishing a long rest reduces your exhaustion level by 1, provided that you have also had some food and drink."
+            "Finishing a long rest reduces your exhaustion level by 1, provided that you have also had some food and drink.",
+            "Also, being raised from the dead reduces a creature’s exhaustion level by 1."
         ]
     },
     {
@@ -175,6 +176,25 @@ data_condition = [
             "Attack rolls against you have advantage.",
             "Any attack that hits you is a critical hit if the attacker is within 5 feet of you.",
             "You automatically fail Strength and Dexterity saving throws.",
+        ]
+    },
+    {
+        title: "Dying",
+        icon: "dead-head",
+        subtitle: "You are dying",
+        description: "You have been dropped to zero hit points and are dying",
+        reference: "PHB, pg. 197.",
+        bullets: [
+            "If you are reduced to 0 hit points by damage that fails to kill you, you fall unconscious and are dying.",
+            "If you receive any healing you immediately regain consciousness again and no longer dying.",
+            "When dying, at the start of each of your turns you make a death saving throw. Roll a d20 and do not add any modifiers.",
+            "A 10 or higher is a success, 9 or lower is a failure.",
+            "On your third success, you become stable.",
+            "On your third failure, you die.",
+            "Rolling a 1 counts as two failures.",
+            "Rolling a 20 immediately causes you to regain 1 hit point.",
+            "You can also be stabilized by an ally taking the Stabilize action and succeeding on a DC 10 Wisdom (Medicine) check.",
+            "Once stable, you regain 1 hit point after 1d4 hours."
         ]
     }
 ]
