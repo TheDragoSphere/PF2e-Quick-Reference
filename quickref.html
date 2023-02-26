@@ -16,10 +16,13 @@
 <body class="page-background">
     <div class="page fontsize" data-size="fullscreen">
 
+        <!--Dark  Mode Button-->
+
+        <button onclick="darkmode()">Toggle dark mode</button>
+
         <!-- Movement section -->
         <div id="section-movement" class="section-container">
             <button type="button" class="collapsible">Movement
-                <span class="float-right">limited by movement speed</span>
             </button>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
@@ -33,7 +36,6 @@
         <!-- Action section -->
         <div id="section-action" class="section-container">
             <button type="button" class="collapsible">Actions
-                <span class="float-right">max. 1/turn</span>
             </button>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
@@ -47,7 +49,7 @@
         <!-- Bonus action section -->
         <div id="section-bonus-action" class="section-container">
             <button type="button" class="collapsible">Bonus Actions
-                <span class="float-right">max. 1/turn</span>
+        <!--        <span class="float-right">max. 1/turn</span>          -->
             </button>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
@@ -188,6 +190,16 @@
         }
         </script>
 
+
+<!--For Dark Mode Test-->
+
+<script>
+function darkmode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    element.classList.toggle ("section-content");
+ }
+</script>
 
 </body>
 </html>

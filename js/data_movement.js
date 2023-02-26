@@ -25,11 +25,28 @@ data_movement = [
         ]
     },
     {
+        title: "Sneak",
+        icon: "one-action",
+        subtitle: "Cost: half your movement speed",
+        description: "Stealth (secret)",
+        reference: "Core Rulebook pg. 252.",
+        bullets: [
+            "You can attempt to move to another place while becoming or staying undetected. Stride up to half your Speed. (You can use Sneak while Burrowing, Climbing, Flying, or Swimming)",
+            "If you’re undetected by a creature for any critical failure you roll on a check to Sneak, you get a failure instead. You also continue to be undetected if you lose cover or greater cover against or are no longer concealed from such a creature.",
+            "If you have cover or greater cover from the creature throughout your Stride, you gain the +2 circumstance bonus from cover (or +4 from greater cover) to your Stealth check. Because you’re moving, the bonus increase from Taking Cover doesn’t apply. You don’t get to roll against a creature if, at the end of your movement, you neither are concealed from it nor have cover or greater cover against it. You automatically become observed by such a creature.",
+            "Success: You’re undetected by the creature during your movement and remain undetected by the creature at the end of it.",
+            "You become observed as soon as you do anything other than Hide, Sneak, or Step. If you attempt to Strike a creature, the creature remains flat-footed against that attack, and you then become observed. If you do anything else, you become observed just before you act unless the GM determines otherwise.",
+            "If a creature uses Seek and you become hidden to it as a result, you must Sneak if you want to become undetected by that creature again.",
+            "Failure: A telltale sound or other sign gives your position away, though you still remain unseen. You’re hidden from the creature throughout your movement and remain so.",
+            "Critical Failure: You’re spotted! You’re observed by the creature throughout your movement and remain so. If you’re invisible and were hidden from the creature, instead of being observed you’re hidden throughout your movement and remain so.",
+        ]
+    },
+    {
         title: "Leap",
         icon: "one-action",
         subtitle: "Cost: 10ft per action",
         description: "Movement cost: 10 feet (15 feet if your speed is 30 or more)",
-        reference: "PHB, pg. 182.",
+        reference: "Core Rulebook pg. 470.",
         bullets: [
             "You take a careful, short jump. You can Leap up to 10 feet horizontally if your Speed is at least 15 feet, or up to 15 feet horizontally if your Speed is at least 30 feet. You land in the space where your Leap ends (meaning you can typically clear a 5-foot gap, or a 10-foot gap if your Speed is 30 feet or more).",
             "If you Leap vertically, you can move up to 3 feet vertically and 5 feet horizontally onto an elevated surface.",
@@ -54,8 +71,8 @@ data_movement = [
         title: "Crawl",
         icon: "one-action",
         subtitle: "Cost: 5ft while prone",
-        description: "Movement cost: 5ft",
-        reference: "PHB, pg. 182.",
+        description: "Req: your speed is 10+",
+        reference: "Core Rulebook pg. 252.",
         bullets: [
             "You move 5 feet by crawling and continue to stay prone."
         ]
@@ -85,7 +102,7 @@ data_movement = [
     {
         title: "Grab an Edge",
         icon: "react",
-        subtitle: "Trigger: You fall from or past an edge or handhold",
+        subtitle: "Trigger: You fall past a handhold",
         description: "Requirement: you are not restained",
         reference: "Core Rulebook pg. 472.",
         bullets: [
@@ -135,30 +152,34 @@ data_movement = [
     {
         title: "Maneuver In Flight",
         icon: "one-action",
-        subtitle: "Modifier: speed halved",
-        description: "Drag or carry the grappled creature with you",
-        reference: "PHB, pg. 195.",
+        subtitle: "Req: Fly speed",
+        description: "Acrobatics (Trained)",
+        reference: "Core Rulebook pg. 240.",
         bullets: [
-            "If you move while grappling another creature, your speed is halved, unless the creature is two or more sizes smaller than you.",
-            "See the attack action for how to grapple a creature."
+            "You try a difficult maneuver while flying. Attempt an Acrobatics check. The GM determines what maneuvers are possible, but they rarely allow you to move farther than your fly Speed.",
+            "Success: You succeed at the maneuver.",
+            "Failure: Your maneuver fails. The GM chooses if you simply can’t move or if some other detrimental effect happens. The outcome should be appropriate for the maneuver you attempted (for instance, being blown off course if you were trying to fly against a strong wind).",
+            "Critical Failure As failure, but the consequence is more dire."
         ]
     },
     {
         title: "Climb",
         icon: "one-action",
-        subtitle: "Modifier: speed halved",
-        description: "Drag or carry the grappled creature with you",
-        reference: "PHB, pg. 195.",
+        subtitle: "Athletics",
+        description: "Move up or down along an inclune",
+        reference: "Core Rulebook pg. 240.",
         bullets: [
-            "If you move while grappling another creature, your speed is halved, unless the creature is two or more sizes smaller than you.",
-            "See the attack action for how to grapple a creature."
+            "Unless it’s particularly easy, you must attempt an Athletics check. The GM determines the DC based on the nature of the incline and environmental circumstances. You’re flat-footed unless you have a climb Speed.",
+            "Critical Success: You move up, across, or safely down the incline for 5 feet plus 5 feet per 20 feet of your land Speed (a total of 10 feet for most PCs).",
+            "Success: You move up, across, or safely down the incline for 5 feet per 20 feet of your land Speed (a total of 5 feet for most PCs, minimum 5 feet if your Speed is below 20 feet).",
+            "Critical Failure: You fall. If you began the climb on stable ground, you fall and land prone."
         ]
     },
     {
         title: "High Jump",
         icon: "two-actions",
-        subtitle: "Modifier: speed halved",
-        description: "Drag or carry the grappled creature with you",
+        subtitle: "Athletics",
+        description: "",
         reference: "PHB, pg. 195.",
         bullets: [
             "If you move while grappling another creature, your speed is halved, unless the creature is two or more sizes smaller than you.",

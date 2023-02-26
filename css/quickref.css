@@ -15,12 +15,26 @@
     page-break-inside: avoid;
 }
 
+.theme-light {
+    background-color: white;
+}
+
 .section-content {
     padding:8px;
     padding-bottom: 0;
     border-radius: 8px;
     margin-top: 0;
     background-color: white;
+    border-color: inherit;
+    font-size: inherit;
+}
+
+.section-contentdark {
+    padding:8px;
+    padding-bottom: 0;
+    border-radius: 8px;
+    margin-top: 0;
+    background-color: black;
     border-color: inherit;
     font-size: inherit;
 }
@@ -386,4 +400,20 @@ p:first-child {
     margin-bottom:8px;
     page-break-inside: avoid;
 
+}
+
+
+/*dark mode */
+.dark-mode {
+    background-color: black;
+  }
+
+  .section-contentdark {
+    padding:8px;
+    padding-bottom: 0;
+    border-radius: 8px;
+    margin-top: 0;
+    background-color: black;
+    border-color: inherit;
+    font-size: inherit;
 }
