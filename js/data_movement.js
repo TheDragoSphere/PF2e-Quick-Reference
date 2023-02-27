@@ -27,7 +27,7 @@ data_movement = [
     {
         title: "Sneak",
         icon: "one-action",
-        subtitle: "Cost: half your movement speed",
+        subtitle: "Cost: half your speed",
         description: "Stealth (secret)",
         reference: "Core Rulebook pg. 252.",
         bullets: [
@@ -80,9 +80,9 @@ data_movement = [
     {
         title: "Stand",
         icon: "one-action",
-        subtitle: "Cost: one action",
+        subtitle: "Req: you are prone",
         description: "Movement cost: 0ft",
-        reference: "PHB, pg. 190-191.",
+        reference: "Core Rulebook pg. 471.",
         bullets: [
             "You stand up from prone"
         ]
@@ -90,10 +90,9 @@ data_movement = [
     {
         title: "Mount",
         icon: "one-action",
-        subtitle: "Cost: one action",
+        subtitle: "Mount an allied creature",
         description: "Creature size must be =/> your size",
-        
-        reference: "PHB, pg. 182.",
+        reference: "Core Rulebook pg. 472.",
         bullets: [
             "You get on an allied animal one size larger than you to ride it",
             "If you’re already mounted, you can instead use this action to dismount, moving off the mount into a space adjacent to it."
@@ -131,10 +130,10 @@ data_movement = [
         description: "Move accross a narrow surface or uneaven ground",
         bullets: [
             "You move across a narrow surface or uneven ground, attempting an Acrobatics check against its Balance DC. You are flat-footed while on a narrow surface or uneven ground.",
-            "Critical Success You move up to your Speed.",
-            "Success You move up to your Speed, treating it as difficult terrain (every 5 feet costs 10 feet of movement).",
-            "Failure You must remain stationary to keep your balance (wasting the action) or you fall. If you fall, your turn ends.",
-            "Critical Failure You fall and your turn ends."
+            "Critical Success: You move up to your Speed.",
+            "Success: You move up to your Speed, treating it as difficult terrain (every 5 feet costs 10 feet of movement).",
+            "Failure: You must remain stationary to keep your balance (wasting the action) or you fall. If you fall, your turn ends.",
+            "Critical Failure: You fall and your turn ends."
         ]
     },
     {
@@ -178,45 +177,44 @@ data_movement = [
     {
         title: "High Jump",
         icon: "two-actions",
-        subtitle: "Athletics",
-        description: "",
-        reference: "PHB, pg. 195.",
+        subtitle: "Athletics vs DC30",
+        description: "Stride 10' then leap vertically 5'(8'/3')",
+        reference: "Core Rulebook pg. 242.",
         bullets: [
-            "If you move while grappling another creature, your speed is halved, unless the creature is two or more sizes smaller than you.",
-            "See the attack action for how to grapple a creature."
+            "You Stride, then make a vertical Leap and attempt a DC 30 Athletics check to increase the height of your jump. If you didn’t Stride at least 10 feet, you automatically fail your check.",
+            "Critical Success Increase the maximum vertical distance to 8 feet, or increase the maximum vertical distance to 5 feet and maximum horizontal distance to 10 feet.",
+            "Success Increase the maximum vertical distance to 5 feet.",
+            "Failure You Leap normally.",
+            "Critical Failure You don’t Leap at all, and instead you fall prone in your space."
         ]
     },
     {
         title: "Long Jump",
         icon: "two-actions",
-        subtitle: "Modifier: speed halved",
-        description: "Drag or carry the grappled creature with you",
-        reference: "PHB, pg. 195.",
+        subtitle: "Athletics vs Distance in feet",
+        description: "Stride 10' then leap the desiired distance",
+        reference: "Core Rulebook pg. 242.",
         bullets: [
-            "If you move while grappling another creature, your speed is halved, unless the creature is two or more sizes smaller than you.",
-            "See the attack action for how to grapple a creature."
+            "You Stride, then make a horizontal Leap and attempt an Athletics check to increase the length of your jump. The DC of the Athletics check is equal to the total distance in feet you’re attempting to move during your Leap (so you’d need to succeed at a DC 20 check to Leap 20 feet). You can’t Leap farther than your Speed.",
+            "If you didn’t Stride at least 10 feet, or if you attempt to jump in a different direction than your Stride, you automatically fail your check.",
+            "Success Increase the maximum horizontal distance you Leap to the desired distance.",
+            "Failure You Leap normally.",
+            "Critical Failure You Leap normally, but then fall and land prone."
         ]
     },
     {
         title: "Swim",
         icon: "one-action",
-        subtitle: "Modifier: speed halved",
+        subtitle: "Athletics",
         description: "Drag or carry the grappled creature with you",
-        reference: "PHB, pg. 195.",
+        reference: "Core Rulebook pg 243 & 463.",
         bullets: [
-            "If you move while grappling another creature, your speed is halved, unless the creature is two or more sizes smaller than you.",
-            "See the attack action for how to grapple a creature."
+            "You propel yourself through water. In most calm water, you succeed at the action without needing to attempt a check. If you must breathe air and you’re submerged in water, you must hold your breath each round. If you fail to hold your breath, you begin to drown. If the water you are swimming in is turbulent or otherwise dangerous, you might have to attempt an Athletics check to Swim.",
+            "If you end your turn in water and haven’t succeeded at a Swim action that turn, you sink 10 feet or get moved by the current, as determined by the GM. However, if your last action on your turn was to enter the water, you don’t sink or move with the current that turn.",
+            "Critical Success: You move through the water 10 feet, plus 5 feet per 20 feet of your land Speed (a total of 15 feet for most PCs).",
+            "Success: You move through the water 5 feet, plus 5 feet per 20 feet of your land Speed (a total of 10 feet for most PCs).",
+            "Critical Failure: You make no progress, and if you’re holding your breath, you lose 1 round of air."
         ]
     },
-    {
-        title: "Sneak",
-        icon: "one-action",
-        subtitle: "Modifier: speed halved",
-        description: "Drag or carry the grappled creature with you",
-        reference: "PHB, pg. 195.",
-        bullets: [
-            "If you move while grappling another creature, your speed is halved, unless the creature is two or more sizes smaller than you.",
-            "See the attack action for how to grapple a creature."
-        ]
-    }
+
 ]
