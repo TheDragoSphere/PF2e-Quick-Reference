@@ -26,7 +26,7 @@
             </button>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
-                    You can move at any time during your turn (before, after, or during actions).
+                    You can move at any time during your turn.
                 </div>
                 <div class="section-row" id="basic-movement">
                 </div>
@@ -47,13 +47,28 @@
                     Combat Maneuvers
                 </div>
                 <div class="section-row" id="basic-combat-maneuvers"></div>
+                
+                <div class="section-row section-subtitle text fontsize">
+                    Magical Actions
+                </div>
+                <div class="section-row" id="basic-magical-actions"></div>
+
+                <div class="section-row section-subtitle text fontsize">
+                    Defensive Actions
+                </div>
+                <div class="section-row" id="basic-defensive-actions"></div>
+
+                <div class="section-row section-subtitle text fontsize">
+                    Other Conflict Actions
+                </div>
+                <div class="section-row" id="basic-more-conflict-actions"></div>
 
             </div>
         </div>
 
-        <!-- Bonus action section -->
-        <div id="section-bonus-action" class="section-container">
-            <button type="button" class="collapsible">Bonus Actions
+        <!-- Object interation section -->
+        <div id="section-object-interaction" class="section-container">
+            <button type="button" class="collapsible">Object Interaction
         <!--        <span class="float-right">max. 1/turn</span>          -->
             </button>
             <div class="section-content">
@@ -61,23 +76,45 @@
                     You can take a bonus action only when a special ability, spell, or feature
                     states that you can do something as a bonus action.
                 </div>
-                <div class="section-row" id="basic-bonus-actions"></div>
+                <div class="section-row" id="basic-object-interaction"></div>
             </div>
         </div>
 
-        <!-- Reaction section -->
+        <!-- Medicine Actions section -->
         <div id="section-reaction" class="section-container">
-            <button type="button" class="collapsible">Reaction</button>
+            <button type="button" class="collapsible">Medicine Actions</button>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
-                    A reaction is an instant response to a trigger of some kind, which
-                    can occur on your turn or on someone else's.
+                   Usually require holding or wearing healers' tools and having a hand free.
                 </div>
-                <div class="section-row" id="basic-reactions"></div>
+                <div class="section-row" id="basic-medicine-actions"></div>
             </div>
         </div>
 
-        <!-- Condition section -->
+        <!-- Other section -->
+      
+        <div id="section-other" class="section-container">
+            <button type="button" class="collapsible">Other Actions</button>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize">
+                    "Conditions alter your cool capabilities in a variety of ways, and can arise as a result of a spell, a class feature, a monster's attack, or other effect."
+                    </div>
+                <div class="section-row" id="basic-other"></div>
+            </div>
+          </div>
+
+          <!-- Cloak and Dagger section -->
+        <div id="section-cloakanddagger" class="section-container">
+            <button type="button" class="collapsible">Cloak and Dagger Actions</button>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize">
+                    Conditions alter your capabilities in a variety of ways, and can arise as a result of a spell, a class feature, a monster's attack, or other effect.
+                </div>
+                <div class="section-row" id="basic-cloakanddagger"></div>
+            </div>
+        </div>
+
+        <!-- Condition section 
         <div id="section-condition" class="section-container">
             <button type="button" class="collapsible">Conditions</button>
             <div class="section-content">
@@ -87,8 +124,9 @@
                 <div class="section-row" id="basic-conditions"></div>
             </div>
         </div>
-        
-        <!-- Environmental section -->
+        -->
+
+        <!-- Environmental section 
         <div id="section-environment" class="section-container">
             <button type="button" class="collapsible">Environmental  Effects</button>
             <div class="section-content">
@@ -110,34 +148,9 @@
                 <div class="section-row" id="environment-cover"></div>
             </div>
         </div>
+        -->
 
-      <!-- Other section -->
-      
-         <div id="section-other" class="section-container">
-            <button type="button" class="collapsible">Other Actions</button>
-            <div class="section-content">
-                <div class="section-row section-subtitle text fontsize">
-                    "Conditions alter your cool capabilities in a variety of ways, and can arise as a result of a spell, a class feature, a monster's attack, or other effect."
-                    </div>
-                <div class="section-row" id="basic-other"></div>
-            </div>
-          </div>
-       
-
-
-
-
-
-        <!-- Cloak and Dagger section -->
-        <div id="section-cloakanddagger" class="section-container">
-            <button type="button" class="collapsible">Cloak and Dagger Actions</button>
-            <div class="section-content">
-                <div class="section-row section-subtitle text fontsize">
-                    Conditions alter your capabilities in a variety of ways, and can arise as a result of a spell, a class feature, a monster's attack, or other effect.
-                </div>
-                <div class="section-row" id="basic-cloakanddagger"></div>
-            </div>
-        </div>
+        
 
 
     </div>
@@ -170,15 +183,15 @@
     <!-- Data -->
     <script type="text/javascript" src="js/data_movement.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_action.js" charset="utf-8"></script>
-    <script type="text/javascript" src="js/data_bonusaction.js" charset="utf-8"></script>
-    <script type="text/javascript" src="js/data_reaction.js" charset="utf-8"></script>
-    <script type="text/javascript" src="js/data_condition.js" charset="utf-8"></script>
-    <script type="text/javascript" src="js/data_environment.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_object_interaction.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_medicine_actions.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_other.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_cloakanddagger.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/quickref.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_condition.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_environment.js" charset="utf-8"></script>
     
-
+    <!--collapsable section-->
     <script>
         var coll = document.getElementsByClassName("collapsible");
         var i;

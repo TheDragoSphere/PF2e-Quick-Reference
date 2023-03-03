@@ -60,15 +60,18 @@ function init() {
     fill_section(data_movement, "basic-movement", "Move");
     fill_section(data_action, "basic-actions", "Action");
     fill_section(data_combat_maneuvers, "basic-combat-maneuvers", "Action");
-    fill_section(data_bonusaction, "basic-bonus-actions", "Bonus action");
-    fill_section(data_reaction, "basic-reactions", "Reaction");
-    fill_section(data_condition, "basic-conditions", "Condition");
+    fill_section(data_magical_actions, "basic-magical-actions", "Action");
+    fill_section(data_defensive_actions, "basic-defensive-actions", "Action");
+    fill_section(data_more_conflict_actions, "basic-more-conflict-actions", "Action");
+    fill_section(data_object_interaction, "basic-object-interaction", "Object Interaction");
+    fill_section(data_medicine_actions, "basic-medicine-actions", "Medicine Actions");
     fill_section(data_other, "basic-other", "Other");
+    fill_section(data_cloakanddagger, "basic-cloakanddagger", "Cloak and Dagger");
+    fill_section(data_condition, "basic-conditions", "Condition");
     fill_section(data_environment_obscurance, "environment-obscurance", "Environment");
     fill_section(data_environment_light, "environment-light", "Environment");
     fill_section(data_environment_vision, "environment-vision", "Environment");
     fill_section(data_environment_cover, "environment-cover", "Environment");
-    fill_section(data_cloakanddagger, "basic-cloakanddagger", "Cloak and Dagger");
 
     var modal = document.getElementById("modal");
     modal.onclick = hide_modal;
