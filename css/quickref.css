@@ -148,11 +148,11 @@
     color: black;
 }
 
-#section-bonus-action, #section-bonus-action .item-icon {
+#section-object-interaction, #section-object-interaction .item-icon {
     background-color: indigo;
     border-color: indigo;
 }
-#section-bonus-action .text {
+#section-object-interaction .text {
     color: indigo;
 }
 
