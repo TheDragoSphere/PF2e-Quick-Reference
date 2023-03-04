@@ -52,9 +52,23 @@ data_medicine_actions = [
         description: "Grants a +2 circ. bonus to the next save vs poison.",
         reference: "Core Rulebook pg 248.",
         bullets: [
-            "Prerequisites: trained in Medicine.",
-            "Requirements: You are holding healer's tools, or you are wearing them and have a hand free",
-            "You can patch up wounds, even in combat. Attempt a Medicine check with the same DC as for Treat Wounds and restore the corresponding amount of HP; this doesn't remove the wounded condition. As with Treat Wounds, you can attempt checks against higher DCs if you have the minimum proficiency rank. The target is then temporarily immune to your Battle Medicine for 1 day."
+            "You treat a patient to prevent the spread of poison. Attempt a Medicine check against the poison’s DC. After you attempt to Treat a Poison for a creature, you can’t try again until after the next time that creature attempts a save against the poison.",
+            "Critical Success: You grant the creature a +4 circumstance bonus to its next saving throw against the poison.",
+            "Success: You grant the creature a +2 circumstance bonus to its next saving throw against the poison.",
+            "Critical Failure: Your efforts cause the creature to take a –2 circumstance penalty to its next save against the poison."
+        ]
+    },
+    {
+        title: "Treat Disease",
+        icon: "first-aid",
+        subtitle: "Medicine (trained)",
+        description: "Grants a +2 circ. bonus to the next save vs disease.",
+        reference: "Core Rulebook pg 248.",
+        bullets: [
+            "You spend at least 8 hours caring for a diseased creature. Attempt a Medicine check against the disease’s DC. After you attempt to Treat a Disease for a creature, you can’t try again until after that creature’s next save against the disease.",
+            "Critical Success: You grant the creature a +4 circumstance bonus to its next saving throw against the disease.",
+            "Success: You grant the creature a +2 circumstance bonus to its next saving throw against the disease.",
+            "Critical Failure: Your efforts cause the creature to take a –2 circumstance penalty to its next save against the disease."
         ]
     },
 ]
