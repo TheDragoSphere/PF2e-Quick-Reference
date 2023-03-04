@@ -192,7 +192,7 @@ data_movement = [
         title: "Long Jump",
         icon: "two-actions",
         subtitle: "Athletics vs Distance in feet",
-        description: "Stride 10' then leap the desiired distance",
+        description: "Stride 10' then leap the desired distance",
         reference: "Core Rulebook pg. 242.",
         bullets: [
             "You Stride, then make a horizontal Leap and attempt an Athletics check to increase the length of your jump. The DC of the Athletics check is equal to the total distance in feet you’re attempting to move during your Leap (so you’d need to succeed at a DC 20 check to Leap 20 feet). You can’t Leap farther than your Speed.",

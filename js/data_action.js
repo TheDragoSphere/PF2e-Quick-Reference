@@ -7,8 +7,8 @@ data_action = [
         reference: "Core Rulebook pg. 471.",
         bullets: [
             "You attack with a weapon you're wielding or with an unarmed attack, targeting one creature within your reach (for a melee attack) or within range (for a ranged attack). Roll the attack roll for the weapon or unarmed attack you are using, and compare the result to the target creature's AC to determine the effect. See Attack Rolls and Damage for details on calculating your attack and damage rolls.",
-            "Critical Success As success, but you deal double damage.",
-            "Success You deal damage according to the weapon or unarmed attack, including any modifiers, bonuses, and penalties you have to damage."
+            "<b>Critical Success:</b> As success, but you deal double damage.",
+            "<b>Success:</b> You deal damage according to the weapon or unarmed attack, including any modifiers, bonuses, and penalties you have to damage."
         ]
     },
 
@@ -20,9 +20,9 @@ data_action = [
         reference: "Core Rulebook pg. 470.",
         bullets: [
             "You attempt to escape from being grabbed, immobilized, or restrained. Choose one creature, object, spell effect, hazard, or other impediment imposing any of those conditions on you. Attempt a check using your unarmed attack modifier against the DC of the effect. This is typically the Athletics DC of a creature grabbing you, the Thievery DC of a creature who tied you up, the spell DC for a spell effect, or the listed Escape DC of an object, hazard, or other impediment. You can attempt an Acrobatics or Athletics check instead of using your attack modifier if you choose (but this action still has the attack trait).",
-            "Critical Success: You get free and remove the grabbed, immobilized, and restrained conditions imposed by your chosen target. You can then Stride up to 5 feet.",
-            "Success: You get free and remove the grabbed, immobilized, and restrained conditions imposed by your chosen target.",
-            "Critical Failure: You don’t get free, and you can’t attempt to Escape again until your next turn.",
+            "<b>Critical Success:</b> You get free and remove the grabbed, immobilized, and restrained conditions imposed by your chosen target. You can then Stride up to 5 feet.",
+            "<b>Success:</b> You get free and remove the grabbed, immobilized, and restrained conditions imposed by your chosen target.",
+            "<b>Critical Failure:</b> You don’t get free, and you can’t attempt to Escape again until your next turn.",
         ]
     },
 
@@ -35,8 +35,8 @@ data_action = [
         bullets: [
             "Requirements You are within melee reach of the opponent you attempt to Feint.",
             "With a misleading flourish, you leave an opponent unprepared for your real attack. Attempt a Deception check against that opponent’s Perception DC.","Critical Success: You throw your enemy’s defenses against you entirely off. The target is flat-footed against melee attacks that you attempt against it until the end of your next turn.",
-            "Success: Your foe is fooled, but only momentarily. The target is flat-footed against the next melee attack that you attempt against it before the end of your current turn.",
-            "Critical Failure: Your feint backfires. You are flat-footed against melee attacks the target attempts against you until the end of your next turn."
+            "<b>Success:</b> Your foe is fooled, but only momentarily. The target is flat-footed against the next melee attack that you attempt against it before the end of your current turn.",
+            "<b>Critical Failure:</b> Your feint backfires. You are flat-footed against melee attacks the target attempts against you until the end of your next turn."
         ]
     },
 ]
@@ -50,10 +50,10 @@ data_combat_maneuvers = [
         reference: "Core Rulebook pg. 242.",
         bullets: [
             "You attempt to grab a creature or object with your free hand. Attempt an Athletics check against the target's Fortitude DC. You can Grapple a target you already have grabbed or restrained without having a hand free.",
-            "Critical Success: Your target is restrained until the end of your next turn unless you move or your target Escapes.",
-            "Success: Your target is grabbed until the end of your next turn unless you move or your target Escapes.",
-            "Failure: You fail to grab your target. If you already had the target grabbed or restrained using a Grapple, those conditions on that creature or object end.",
-            "Critical Failure: If you already had the target grabbed or restrained, it breaks free. Your target can either grab you, as if it succeeded at using the Grapple action against you, or force you to fall and land prone."
+            "<b>Critical Success:</b> Your target is restrained until the end of your next turn unless you move or your target Escapes.",
+            "<b>Success:</b> Your target is grabbed until the end of your next turn unless you move or your target Escapes.",
+            "<b>Failure:</b> You fail to grab your target. If you already had the target grabbed or restrained using a Grapple, those conditions on that creature or object end.",
+            "<b>Critical Failure:</b> If you already had the target grabbed or restrained, it breaks free. Your target can either grab you, as if it succeeded at using the Grapple action against you, or force you to fall and land prone."
         ]
     },
 
@@ -66,9 +66,9 @@ data_combat_maneuvers = [
         bullets: [
             "Requirements You have at least one hand free. The target can’t be more than one size larger than you.",
             "You push a creature away from you. Attempt an Athletics check against your target's Fortitude DC.",
-            "Critical Success: You push your target up to 10 feet away from you. You can Stride after it, but you must move the same distance and in the same direction.",
-            "Success You push your target back 5 feet. You can Stride after it, but you must move the same distance and in the same direction.",
-            "Critical Failure You lose your balance, fall, and land prone."
+            "<b>Critical Success:</b> You push your target up to 10 feet away from you. You can Stride after it, but you must move the same distance and in the same direction.",
+            "<b>Success:</b> You push your target back 5 feet. You can Stride after it, but you must move the same distance and in the same direction.",
+            "<b>Critical Failure:</b> You lose your balance, fall, and land prone."
         ]
     },
     {
@@ -80,7 +80,7 @@ data_combat_maneuvers = [
         bullets: [
             "Requirements You have at least one hand free. Your target can’t be more than one size larger than you.",
             "You try to knock a creature to the ground. Attempt an Athletics check against the target’s Reflex DC.",
-            "Critical Success: The target falls and lands prone and takes 1d6 bludgeoning damage.",
+            "<b>Critical Success:</b> The target falls and lands prone and takes 1d6 bludgeoning damage.",
             "Success: The target falls and lands prone.",
             "Critical Failure: You lose your balance and fall and land prone."
         ]
