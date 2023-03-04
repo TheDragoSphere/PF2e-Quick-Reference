@@ -22,18 +22,18 @@ data_other = [
         reference: "Core Rulebook pg 239.",
         bullets: [
             "You attempt a skill check to try to remember a bit of knowledge regarding a topic related to that skill. The GM determines the DCs for such checks and which skills apply.",
-            "Critical Success: You recall the knowledge accurately and gain additional information or context.",
-            "Success: You recall the knowledge accurately or gain a useful clue about your current situation.",
-            "Critical Failure: You recall incorrect information or gain an erroneous or misleading clue.",            
+            "<b>Critical Success:</b> You recall the knowledge accurately and gain additional information or context.",
+            "<b>Success:</b> You recall the knowledge accurately or gain a useful clue about your current situation.",
+            "<b>Critical Failure:</b> You recall incorrect information or gain an erroneous or misleading clue.",            
             "The following skills can be used to Recall Knowledge, getting information about the listed topics. In some cases, you can get the GM's permission to use a different but related skill, usually against a higher DC than normal. Some topics might appear on multiple lists, but the skills could give different information.",
-            "Arcana: Arcane theories, magical traditions, creatures of arcane significance, and arcane planes.",
-            "Crafting: Alchemical reactions and creatures, item value, engineering, unusual materials, and constructs.",
-            "Lore: The subject of the Lore skill's subcategory.",
-            "Medicine: Diseases, poisons, wounds, and forensics.",
-            "Nature: The environment, flora, geography, weather, creatures of natural origin, and natural planes.",
-            "Occultism: Ancient mysteries, obscure philosophy, creatures of occult significance, and esoteric planes.",
-            "Religion: Divine agents, divine planes, theology, obscure myths, and creatures of religious significance.",
-            "Society: Local history, key personalities, legal institutions, societal structure, and humanoid culture."
+            "<b>Arcana:</b> Arcane theories, magical traditions, creatures of arcane significance, and arcane planes.",
+            "<b>Crafting:</b> Alchemical reactions and creatures, item value, engineering, unusual materials, and constructs.",
+            "<b>Lore:</b> The subject of the Lore skill's subcategory.",
+            "<b>Medicine:</b> Diseases, poisons, wounds, and forensics.",
+            "<b>Nature:</b> The environment, flora, geography, weather, creatures of natural origin, and natural planes.",
+            "<b>Occultism:</b> Ancient mysteries, obscure philosophy, creatures of occult significance, and esoteric planes.",
+            "<b>Religion:</b> Divine agents, divine planes, theology, obscure myths, and creatures of religious significance.",
+            "<b>Society:</b> Local history, key personalities, legal institutions, societal structure, and humanoid culture."
         ]
     },
     {
